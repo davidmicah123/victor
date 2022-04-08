@@ -6,6 +6,7 @@
    body {
     font-family: cursive;
     margin-top: 15vh;
+    background-color: white;
    }
    html{
      overflow-x: hidden;
@@ -164,6 +165,15 @@
   height: 50vh;
   max-width: 100%;
 }
+
+
+
+
+.welcome_img{
+  width: 40vw;
+}
+
+
 #container{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -232,6 +242,7 @@
   text-align: center;
   font-size: 1.3em;
   border-radius: 4em;
+  display: none;
   
 }
 .introText{
@@ -244,11 +255,13 @@
   height: 5vh;
   color: black;
   align-self:flex-end;
+  margin: 3vh 0;
 }
 #blouse{
-  color: yellow;
+  color: blueviolet;
   justify-self: baseline;
-  
+  font-size: 5vh;
+  margin-top: 3vh;
   /* justify-self: right; */
 }
 img{
@@ -261,11 +274,15 @@ img{
   width: 100%;
 }
 .wrapper .cards_wrap{
-  display: flex;
-  flex-wrap: wrap;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 90vw;
+  margin-left: 5vw;
+  grid-gap: 1vw;
 }
 .cards_wrap .card_item{
-width: 25%;
+width: 100%;
 padding: 10px;
 }
 .cards_wrap .card_inner{
@@ -276,10 +293,61 @@ padding: 10px;
   height: auto;
   padding: 10px;
   padding-bottom: 0;
+  box-shadow: 3px 3px 5px black;
+}
+.learn{
+  padding: 1vh;
+  color: white;
+  border: 0;
+  border-radius: 0.2em;
+  font-size: 3vh;
+  background-color: blueviolet;
+  height: 5vh;
+  margin: 2vh  0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer_section{
-  margin-top: 170vh;
+  /* margin-top: 170vh; */
   background-color: rgb(153, 152, 151);
   padding-top: 5vh;
   padding-bottom: 2vh;
@@ -297,3 +365,4 @@ padding: 10px;
   padding: 2vh 0;
   background: white;
 }
+
