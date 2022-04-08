@@ -131,7 +131,7 @@
 }
    #headtexts{
        font-size: 25px;
-       color: yellow;      
+       color: white;      
         /* -moz-transform: translateX(100%);
         -webkit-transform: translateX(100%);
         transform: translateX(100%); */
@@ -173,7 +173,7 @@
 }
 #scroll-container{
   width: 100%;
-    background-color: red;
+    background-color: blueviolet;
     margin-top: 12vh;
 }
 .flip-card {
