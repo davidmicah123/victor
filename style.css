@@ -7,6 +7,7 @@
     font-family: cursive;
     margin-top: 15vh;
     background-color: white;
+    text-align: left;
    }
    html{
      overflow-x: hidden;
@@ -169,8 +170,27 @@
 
 
 
+.welcome{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  grid-gap: 1vw;
+  margin: 3vw auto;
+}
 .welcome_img{
   width: 40vw;
+}
+.welcome_grid2{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+}
+.welcome_grid2 h1{
+  text-align: left;
+}
+
+.welcome_grid2 p{
+  text-align: left;
 }
 
 
@@ -310,15 +330,46 @@ padding: 10px;
 
 
 
+.companies{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 85vw;
+  margin: 3vh auto;
+  grid-gap: 1vw;
+}
+.company_header{
+  color: blueviolet;
+  font-size: 5vh;
+  margin: 3vh auto;
+}
 
 
 
 
 
+.agent_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: blueviolet;
+  padding-left: 10vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
 
-
-
-
+.agent_header, .agent_text{
+  text-align: left;
+  color: white;
+}
+.agent_img{
+  width: 30vw;
+}
+.agent_grid1{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+}
 
 
 
