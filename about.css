@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: cursive;
+    margin-top: 15vh;
+   }
+   html{
+     overflow-x: hidden;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 12vh;
+    /* position: relative; */
+   }
+   .nav-links a {
+    color: black;
+   }
+   .logo {
+    font-size: 32px;
+   }
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+
+   .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+
+   .menu li {
+    padding: 5px 14px;
+   }
+   
+   .services {
+    position: relative; 
+   }
+
+   .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position:fixed; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: white;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+   input[type=checkbox]{
+    display: none;
+   }
+   input[type=checkbox]{
+    display: none;
+   } 
+
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:black;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu  li:hover {
+    display: inline-block;
+    background-color:black;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: black;
+   }
+   }
+   body{
+       background-color: #CDB599FF;
+       margin: 0;
+       margin: 0;
+}
+   #headtexts{
+       font-size: 25px;
+       color: yellow;      
+        /* -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%); */
+        animation: my-animation 7s  linear infinite;
+      }
+      
+      
+      @keyframes my-animation {
+        from {transform: translateX(-60vw);}
+        to {transform: translateX(110vw);}
+      }
+      
+      @keyframes my-animation {
+        from {
+          -moz-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+        }
+        to {
+          -moz-transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+    
+}
+.hero_image{
+  background-image: url(/Images/project_hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  max-width: 100%;
+}
+#container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   max-width: 90%;
+   margin: 0 auto;
+   grid-template-rows: 250px 250px;
+}
+#scroll-container{
+  width: 100%;
+    background-color: red;
+    margin-top: 12vh;
+}
+.flip-card {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: 5px solid #f1f1f1;
+  perspective: 1000px;
+}
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+} 
+.introText{
+  height: 30vh;
+  width: 100%;
+  /* background-color:blue; */
+  /* padding: 1em; */
+  /* text-overflow: clip; */
+}
+.firstT{
+  /* background-color: green; */
+  color: white;
+  height: 7vh;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.3em;
+  border-radius: 4em;
+  
+}
+.introText{
+  margin: auto;
+  /* display: flexbox; */
+ text-align: center;
+}
+.secondT{
+  /* background-color: dodgerblue; */
+  height: 5vh;
+  color: black;
+  align-self:flex-end;
+}
+#blouse{
+  color: yellow;
+  justify-self: baseline;
+  
+  /* justify-self: right; */
+}
+img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrapper{
+  /* margin: 20px; */
+  width: 100%;
+}
+.wrapper .cards_wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards_wrap .card_item{
+width: 25%;
+padding: 10px;
+}
+.cards_wrap .card_inner{
+  background: #fff;
+}
+.cards_wrap .card_top{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.footer_section{
+  margin-top: 170vh;
+  background-color: rgb(153, 152, 151);
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+.footer_lists{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80vw;
+  margin-left: 10vw;
+}
+.copyright{
+  text-align: center;
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+  padding: 2vh 0;
+  background: white;
+}
