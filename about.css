@@ -345,6 +345,24 @@
 }
 
 
+.registeration_form{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-size: 5vh;
+}
+.our_agreement{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90vw;
+  grid-gap: 1vw;
+  margin-left: 4vw;
+  margin-bottom: 4vh;
+  /* background-color: #bbb; */
+}
+.registeration_form_img{
+  width: 45vw;
+}
+
 
 
 
@@ -397,4 +415,44 @@
   margin-bottom: 1vh;
   padding: 2vh 0;
   background: white;
+}
+
+
+
+@media (max-width: 700px) {
+  html{
+    overflow-x: hidden;
+  }
+  body{
+    /* overflow-x: hidden; */
+  }
+  .navbar{
+    width: 80vw;
+  }
+  .hero_image{
+    width: 80%;
+  }
+  .consultants{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    margin-left: 2vw;
+    width: 80vw;
+  }
+  .company_grid{
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2vw;
+  }
+  .no_card{
+    display: none;
+  }
+  .patnership_image{
+    width: 40vw;
+  }
+  .registeration_form_img{
+    width: 30vw;
+  }
+  .report_problem{
+    width: 70%;
+    /* padding-bottom: 7vh; */
+  }
 }

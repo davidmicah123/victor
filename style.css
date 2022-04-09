@@ -1,13 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
    }
    body {
     font-family: cursive;
-    margin-top: 15vh;
+    margin-top: 30vh;
     background-color: white;
     text-align: left;
+    margin-top: 100vh;
    }
    html{
      overflow-x: hidden;
@@ -22,14 +23,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 6.5px;
     background-color: rgb(142, 21, 255);
     color: black;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 95%;
     z-index: 1;
-    height: 12vh;
+    height: 10vh;
+    padding-right: 5vw;
     /* position: relative; */
    }
    .nav-links a {
@@ -127,7 +129,7 @@
    }
    }
    body{
-       background-color: #CDB599FF;
+       background-color: white;
        margin: 0;
        margin: 0;
 }
@@ -137,6 +139,7 @@
         -webkit-transform: translateX(100%);
         transform: translateX(100%); */
         animation: my-animation 10s  linear infinite;
+        /* margin-top: 5vh; */
       }
   .moving{
     color: white;   
@@ -249,11 +252,11 @@
   transform: rotateY(180deg);
 } 
 .introText{
-  height: 30vh;
+  /* height: 30vh; */
   width: 100%;
-  /* background-color:blue; */
+  background-color:blue;
   /* padding: 1em; */
-  /* text-overflow: clip; */
+  /* text-overflow: clip;
 }
 .firstT{
   /* background-color: green; */
@@ -285,6 +288,7 @@
   font-size: 5vh;
   margin-top: 3vh;
   /* justify-self: right; */
+  text-align: center;
 }
 img{
   width: 100%;
@@ -300,8 +304,9 @@ img{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 90vw;
-  margin-left: 5vw;
-  grid-gap: 1vw;
+  margin-left: 3vw;
+  grid-gap: 2vw;
+  box-sizing: border-box;
 }
 .cards_wrap .card_item{
 width: 100%;
@@ -343,6 +348,8 @@ padding: 10px;
   color: blueviolet;
   font-size: 5vh;
   margin: 3vh auto;
+  text-align: center;
+
 }
 
 
@@ -405,7 +412,7 @@ padding: 10px;
 }
 .rotate{
   background-color: black;
-  width: 6vw;
+  width: 4vw;
   height: 10vh;
   border-radius: 50%;
   animation-name: spin;
@@ -413,7 +420,7 @@ padding: 10px;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   cursor: pointer;
-  
+  padding-left: 2vw;
 }
 .rotate:hover{
   background-color: darkcyan;
@@ -456,7 +463,7 @@ padding: 10px;
 .excellent{
   font-size: 10vh;
   position: relative;
-  left: 40vw;
+  left: 46vw;
   top: 23vh;
 }
 .product_rating{
@@ -499,3 +506,58 @@ padding: 10px;
 }
 
 
+
+
+@media (max-width: 700px) {
+  html{
+    overflow-x: hidden;
+  }
+  body{
+    overflow: hidden;
+    /* margin-top: .5vh; */
+  }
+  .navbar{
+    width: 95%;
+    color: white;
+
+  }
+  .menu{
+    background-color: white;
+  }
+  .welcome{
+    grid-template-columns: 1fr;
+    margin-left: 2;
+
+  }
+  .rotate{
+    padding-left: 3vw;
+  }
+  .welcome_img{
+    width: 80vw;
+  }
+  .introText{
+    display: none;
+  }
+  .companies{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    margin-left: 4vw;
+  }
+  .company_img{
+    width: 45vw;
+  }
+  .rotate_grid{
+    margin-left: 0;
+  }
+  .wrapper .cards_wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    grid-gap: 5vw;
+    margin-top: 7vh;
+  }
+  .agent_grid{
+    grid-template-columns: 1fr;
+    width: 100%;
+  } 
+} 

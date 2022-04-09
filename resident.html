@@ -10,43 +10,37 @@
     <link rel="stylesheet" href="resident.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Study Assistant</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-            Blog
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="blog.html">sport</a></li>
-            <li><a class="dropdown-item" href="food.html">Food/Fruit</a></li>
-            <li><a class="dropdown-item" href="rest.html">Rest</a></li>
-            <li><a class="dropdown-item" href="game.html">Game</a></li>
-            <li><a class="dropdown-item" href="#">Hangout</a></li>
-            <li><a class="dropdown-item" href="#">coffee</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">A Drift To Success</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="speach.html">Text-To-Voice</a>
-        </li>
-        
-    <button class="signup_btn"><a href="signin.html" class="signin_link">Sign-up</a></button>
-      </ul>
-      
+    <nav class="navbar">
+        <div class="logo">VW2WS</div>
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="services">
+              <a href="hom">Register-as</a>
+              <ul class="dropdown">
+                <li><a href="resident.html">A Residential Living </a></li>
+                <li><a href="/">A Street</a></li>
+                <li><a href="/">A Community</a></li>
+                <li><a href="/">Bussines</a></li>
+                <li><a href="/">A Contractor</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact-Us</a></li>
+          </div>
+        </ul>
+      </nav>
+      <div class="hero_image">
+
     </div>
-  </nav>
+
+    <div class="housing">
+        <img src="images/Dumpsite-In-Ibadan.jpg" class="housing_img" alt="">
+        <h2>Make your Neat and tidy for healthy living</h2>
+    </div>
+    
     <div class="container">
         <h1 class="customer_info">Client's Information</h1><br>
         <span><input type="text" class="email_address" placeholder="Valid Email"></span><br>
@@ -327,13 +321,15 @@
             <span class="agreement_text spaced">  Self contain: <input type="checkbox" checked></span>
             <span class="agreement_text">Single Room: <input type="checkbox" checked> </span>
             <span class="agreement_text spaced">Church: <input type="checkbox" checked> </span>
+            <span class="agreement_text spaced">Moxque: <input type="checkbox" checked> </span>
+            <span class="agreement_text spaced">School: <input type="checkbox" checked> </span>
 
         </div>
 
         <p class="our_price"><strong>#5,000 per 10kg of refuse desposed</strong> </p>
         <p class="our_price"><strong>Weight of refuse  we are expected to despose</strong> <input type="number" class="refuse_weight" placeholder="1"> </p>
             <small class="date">Date: <input type="date" name="" id=""></small><small class="time">Time: <input type="time" name="" id="">
-                <small class="budget">Your Budget: <input type="number" name="" id="budget_input"></small>
+                <small class="budget">Your Budget: <input type="number" name="" id="budget_input" placeholder="#########" ></small>
 
         <textarea name="" id="textarea" cols="30" rows="10" placeholder="Describe What You Want To despose"></textarea>
         <!-- <div class="accordion" id="accordionExample">
@@ -367,6 +363,53 @@
     </div>
 
 
+    <section class="footer_section">
+        <div class="footer">
+          <div class="footer_lists">
+            <ul>
+              <li>Services</li>
+              <li>Addons</li>
+              <li>Opera account</li>
+              <li>Wallpapers</li>
+              <li>Opera Ads</li>
+              <li>Opera News</li>
+              <li>Olist</li>
+              <li>Opera for Business</li>
+            </ul>
+            <ul>
+              <li>Services</li>
+              <li>Addons</li>
+              <li>Opera account</li>
+              <li>Wallpapers</li>
+              <li>Opera Ads</li>
+              <li>Opera News</li>
+              <li>Olist</li>
+              <li>Opera for Business</li>
+            </ul>
+            <ul>
+              <li>Services</li>
+              <li>Addons</li>
+              <li>Opera account</li>
+              <li>Wallpapers</li>
+              <li>Opera Ads</li>
+              <li>Opera News</li>
+              <li>Olist</li>
+              <li>Opera for Business</li>
+            </ul>
+            <ul>
+              <li>Services</li>
+              <li>Addons</li>
+              <li>Opera account</li>
+              <li>Wallpapers</li>
+              <li>Opera Ads</li>
+              <li>Opera News</li>
+              <li>Olist</li>
+              <li>Opera for Business</li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">&copy; all rights reserved VW2WS</p>
+      </section>
 
     
     
