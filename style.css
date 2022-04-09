@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(142, 21, 255);
     color: black;
     position: fixed;
     top: 0;
@@ -433,6 +433,40 @@ padding: 10px;
 
 
 
+.rating{
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  width: 100%;
+  padding-top: 1vw;
+  padding: 5vw;
+  padding-left: 5vw;
+  padding-right: 0;
+  grid-gap: 3vw;
+  background-image: url('images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10vh;
+}
+.rating_col1{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  color: white;
+}
+.excellent{
+  font-size: 10vh;
+  position: relative;
+  left: 40vw;
+  top: 23vh;
+}
+.product_rating{
+  font-size: 7vh;
+  padding-bottom: 5vh;
+}
+.product_rating_text{
+  font-size: 3vh;
+}
+
 
 
 
@@ -448,7 +482,7 @@ padding: 10px;
   margin-top: 10vh;
   background-color: rgb(153, 152, 151);
   padding-top: 5vh;
-  padding-bottom: 2vh;
+  padding-bottom: vh;
 }
 .footer_lists{
   display: grid;
