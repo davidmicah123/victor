@@ -249,6 +249,42 @@
 
 
 
+.main_about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  grid-gap: 1vw;
+  margin-left: 5vw;
+}
+.about_img{
+  width: 50vw;
+}
+.main_grid2{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+
+.consultants{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-bottom: 3vh;
+}
+.conultant_header{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 6vh;
+}
+
+
+
+
+
+
 
 
 .top_rated{
@@ -296,7 +332,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 1vw;
   width: 80%;
-  margin-left: 7vw;
+  margin-left: 3vw;
 }
 .partnership_header{
   font-size: 7vh;
@@ -304,7 +340,7 @@
   text-align: center;
 }
 .patnership_image{
-  width: 40vw;
+  width: 45vw;
   height: 60vh;
 }
 
@@ -314,10 +350,37 @@
 
 
 
+.report_problem{
+  background-color: rgb(255, 192, 203);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 7vh;
+  padding-bottom: 5vh;
+  height: 25vh;
+}
+.report_div1{
+  text-align: left;
+  padding-left: 7vw;
+}
+.report_div2{
+  text-align: left;
+  /* padding-left: 7vw; */
+}
+.appointment{
+  height: 6vh;
+  border-radius: 5em;
+  padding: 1vh;
+  background: rgb(255, 44, 79);
+  border: 0;
+  color: white;
+  font-weight: bolder;
+}
+
+
 
 
 .footer_section{
-  margin-top: 170vh;
+  /* margin-top: 10vh; */
   background-color: rgb(153, 152, 151);
   padding-top: 5vh;
   padding-bottom: 2vh;
