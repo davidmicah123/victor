@@ -2,11 +2,15 @@
     padding: 0;
     margin: 0;
 }
+html{
+    overflow-x: hidden;
+}
 body{
     background-color: #f4f4f4d7;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #6969dd #e0e0e0;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -125,7 +129,7 @@ a {
    }
    }
    .hero_image{
-    background-image: url(Images/project_hero.jpg);
+    background-image: url(Images/section_bg02.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
@@ -195,6 +199,22 @@ a {
     height: 12vh;
     color: white;
     z-index: 1;
+}
+
+/* .main_section{
+    background-image: url(images/section_bg02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    margin-top: 4vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+} */
+.register_heading{
+    text-align: center;
+    font-size: 8vh;
+    color: blueviolet;
 }
 .container{
     margin-left: 18vw;
@@ -398,7 +418,7 @@ a {
     margin-top: 10vh;
     background-color: rgb(153, 152, 151);
     padding-top: 5vh;
-    padding-bottom: vh;
+    padding-bottom: 4vh;
   }
   .footer_lists{
     display: grid;
@@ -419,10 +439,19 @@ a {
 
 
   @media (max-width: 700px) {
+    html{
+        overflow-x: hidden;
+    }
+      body{
+          /* overflow-x: hidden; */
+      }
+      .housing{
+          grid-template-columns: 1fr;
+      }
       .container{
           padding: 2vw;
           width: 95%;
-          margin-left: 8vw;
+          margin-left: 5vw;
       }
       .email_address, .company, .country, .phone_number{
           width: 73vw;

@@ -343,7 +343,7 @@ input[type=checkbox]:checked ~ .menu{
     margin-top: 10vh;
     background-color: rgb(153, 152, 151);
     padding-top: 5vh;
-    padding-bottom: vh;
+    padding-bottom: 4vh;
   }
   .footer_lists{
     display: grid;
