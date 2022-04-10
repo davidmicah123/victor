@@ -450,3 +450,42 @@ a {
           margin-top: 2vh;
       }
   }
+
+
+
+
+
+
+
+  @media (max-width: 550px) {
+    .container{
+        padding: 2vw;
+        width: 95%;
+        margin-left: 2vw;
+    }
+    .email_address, .company, .country, .phone_number{
+        width: 84vw;
+    }
+    .first_name, .last_name{
+        width: 35vw;
+    }
+    .zipcode, .city, .state{
+        width: 25.3vw;
+    }
+    .pricing_div{
+        grid-template-columns: 1fr 1fr;
+    }
+    .spaced{
+        margin: 0;
+    }
+    #textarea{
+        width: 82vw;
+    }
+    .submit{
+        width: 87vw;
+    }
+    .budget{
+        margin-left: 15vw;
+        margin-top: 2vh;
+    }
+}
