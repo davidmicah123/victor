@@ -416,3 +416,37 @@ a {
   
   
   
+
+
+  @media (max-width: 700px) {
+      .container{
+          padding: 2vw;
+          width: 95%;
+          margin-left: 8vw;
+      }
+      .email_address, .company, .country, .phone_number{
+          width: 73vw;
+      }
+      .first_name, .last_name{
+          width: 35vw;
+      }
+      .zipcode, .city, .state{
+          width: 22.5vw;
+      }
+      .pricing_div{
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .spaced{
+          margin: 0;
+      }
+      #textarea{
+          width: 74vw;
+      }
+      .submit{
+          width: 75vw;
+      }
+      .budget{
+          margin-left: 15vw;
+          margin-top: 2vh;
+      }
+  }
